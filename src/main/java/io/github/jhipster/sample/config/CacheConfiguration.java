@@ -54,6 +54,7 @@ public class CacheConfiguration {
             createCache(cm, io.github.jhipster.sample.domain.Label.class.getName() + ".operations");
             createCache(cm, io.github.jhipster.sample.domain.Operation.class.getName());
             createCache(cm, io.github.jhipster.sample.domain.Operation.class.getName() + ".labels");
+            createCache(cm, io.github.jhipster.sample.domain.Livro.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

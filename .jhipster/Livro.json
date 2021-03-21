@@ -1,0 +1,73 @@
+{
+  "name": "Livro",
+  "fields": [
+    {
+      "fieldName": "isbn",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required",
+        "unique",
+        "minlength",
+        "maxlength"
+      ],
+      "fieldValidateRulesMinlength": "5",
+      "fieldValidateRulesMaxlength": "13"
+    },
+    {
+      "fieldName": "titulo",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required",
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "100"
+    },
+    {
+      "fieldName": "assunto",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "editora",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required",
+        "minlength",
+        "maxlength"
+      ],
+      "fieldValidateRulesMinlength": "4",
+      "fieldValidateRulesMaxlength": "100"
+    },
+    {
+      "fieldName": "capa",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "image"
+    },
+    {
+      "fieldName": "numeroPaginas",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "tombo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "copies",
+      "fieldType": "Integer",
+      "fieldValidateRules": [
+        "required"
+      ]
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210321190615",
+  "entityTableName": "livro",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}
