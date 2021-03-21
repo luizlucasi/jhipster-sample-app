@@ -1,0 +1,29 @@
+
+DEFAULT_MIN_LENGTH = 4
+DEFAULT_MAX_LENGTH = 100
+
+
+
+
+
+
+
+
+
+entity Livro{
+  isbn String required unique minlength(5) maxlength(13)
+  titulo String required maxlength(100)
+  assunto String
+  editora String required minlength(DEFAULT_MIN_LENGTH) maxlength(DEFAULT_MAX_LENGTH)
+  capa ImageBlob
+  numeroPaginas Integer
+  tombo Integer
+  copies Integer required
+  formato LivroFormato
+}
+
+
+
+paginate * with pagination
+
+
